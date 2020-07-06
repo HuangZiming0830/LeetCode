@@ -21,3 +21,6 @@ def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
             stack = next_level_nodes
             self.levels.insert(0, current_lvl)
         return self.levels
+
+
+https://zhuanlan.zhihu.com/p/24986203
