@@ -1,0 +1,15 @@
+119. Pascal's Triangle II
+
+
+from math import factorial as f
+
+class Solution:
+    def getRow(self, rowIndex: int) -> List[int]:
+    	L = []
+    	n = rowIndex
+    	for r in range(n+1):
+    		L.append(round(f(n)/((f(r)*f(n-r)))))
+    	return L
+		
+	- Python 3
+	- Junaid Mansuri
